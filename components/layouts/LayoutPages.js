@@ -4,6 +4,7 @@ import Footer from "../footer"
 import Header from "../Header"
 import Head from 'next/head'
 import { FunctionalsContent } from '../../context/content'
+import ContactFooter from '../ContactFooter.jsx'
 
 
 const LayoutPages = ({children}) => {
@@ -17,6 +18,7 @@ const LayoutPages = ({children}) => {
            <Container className="py-2">
            {children}
            </Container>
+           <ContactFooter/>
            <Footer/>
         </>
     )

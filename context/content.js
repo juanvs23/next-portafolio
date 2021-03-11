@@ -1,5 +1,5 @@
 import React, { createContext,useState } from 'react';
-import {empresas, skills} from '../data/data';
+import {empresas, skills,portfolio} from '../data/data';
 
 
 export const FunctionalsContent =createContext();
@@ -9,7 +9,7 @@ const FunctionalsProvider=({children})=>{
         return(
         <FunctionalsContent.Provider
             value={{
-                empresas, skills,
+                empresas, skills,portfolio,
                 titleContent,setTitleContent
             }}
         >

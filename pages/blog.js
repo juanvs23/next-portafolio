@@ -5,8 +5,7 @@ import {useContext,useEffect} from 'react'
 const blog = () => {
     const {setTitleContent} = useContext(FunctionalsContent);
     useEffect(() => {
-        setTitleContent('Blog')
-      
+        setTitleContent('Blog');  
     }, [])
     return (
         <LayoutPages>

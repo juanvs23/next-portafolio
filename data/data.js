@@ -198,24 +198,8 @@ export const skills= [
         },
     ]
 },
-{
-    nombre:'Linux server',
-    icon: 'fab fa-linux',
-    porcentaje:70,
-    detalles:[
-      {
-          titulo:'Experiencia con desarrollo de instancias de servidores',
-      },
-      
-      {
-        titulo:'Utilización de la terminal bash',
-        },
-        {
-            titulo:'Experiencia con conexion ssh',
-        },
-    ]
-},
-{
+
+{ 
     nombre:'Node',
     icon: 'fab fa-node-js',
     porcentaje:70,
@@ -252,4 +236,43 @@ export const skills= [
         },
     ]
 },
+]
+export const portfolio=[
+    {
+        title:'Clubecomigo',
+        type:'ecommerce',
+        url:'https://clubebemcomigo.com.br/',
+        foto:'/clube.png'
+    },
+    {
+        title:'Cleveland',
+        type:'learning',
+        url:'http://cursoscleveland.com/',
+        foto:'/cleveland.png'
+    },
+    {
+        title:'Dogtorcat',
+        type:'',
+        url:'https://clubebemcomigo.com.br/',
+        foto:'/dogtorcat.png'
+    },
+    {
+        title:'Kia',
+        type:'ecommerce',
+        url:'http://kia.com.co/',
+        foto:'/kia.png'
+    },
+    {
+        title:'Lenguaje Común de Intercambio de Información',
+        type:'ecommerce',
+        url:'http://lenguaje.mintic.gov.co/',
+        foto:'/lenguaje-comun-de-intercambio.png'
+    },
+    {
+        title:'Alimentos moderna',
+        type:'ecommerce',
+        url:'https://www.moderna.com.ec/',
+        foto:'/moderna-alimentos.png'
+    }
+
 ]
