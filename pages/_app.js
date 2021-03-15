@@ -1,5 +1,7 @@
 import bootswatch from 'bootswatch/dist/darkly/bootstrap.min.css';
 import  FunctionalsProvider  from '../context/content';
+import 'nprogress/nprogress.css';
+import '../global.css';
 
 
 

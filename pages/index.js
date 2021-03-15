@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { FunctionalsContent } from '../context/content';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import NProgress from 'nprogress';
 import SkillsContent from '../components/SkillsContent'
 import Experiencias from '../components/Experiencias'
 import PortfolioRow from '../components/PortfolioRow'
@@ -19,6 +20,11 @@ function HomePage() {
     useEffect(() => {
         setTitleContent('Mi Portafolio')
         AOS.init({duration:1000});
+       NProgress.start();
+       NProgress.inc();
+        setTimeout(()=>{
+            NProgress.done();
+        },1000)
     }, [])
     const empresaTime = ()=>(empresas.length*100)
 
