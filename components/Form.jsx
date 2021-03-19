@@ -3,7 +3,7 @@ import styled from 'styled-components';
 //import {SendPost} from '../hooks/useFetch'
 import { FunctionalsContent } from '../context/content';
 import Modal from 'react-bootstrap/Modal';
-import axios from 'axios'
+import emailjs from 'emailjs-com';
 export const Fomulario = styled.div`
   #send{
       display:block;
@@ -85,15 +85,19 @@ const Form = () => {
       </div>`;
 
         document.querySelector('form button#send').innerHTML = spinner;
-        axios.post('http://localhost:3001/sendmail',data)
+        emailjs.sendForm('service_vyeqs84', 'template_gsw24ej', e.target, 'user_80w8vxy8JqBidczHx0CcY')
         .then(res=>{
+          if(res.text==="OK"){
           setTimeout(() => {
-           if(res.data==="ok!"){
+           
               document.querySelector('form#contact-form').reset();
             document.querySelector('form button#send').innerHTML = 'Enviar';
             setShow(true);
-           }
+          
            }, 1000);
+          }else{
+            document.querySelector('form button#send').innerHTML = 'Enviar';
+          }
         }) 
        }
         

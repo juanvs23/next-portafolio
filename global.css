@@ -10,6 +10,13 @@
 body, html {
     overflow-x: hidden;
 }
+.container-layout {
+    min-height: 39.6vh;
+}
+.image-content {
+    display: flex;
+    justify-content: center;
+}
 .pb-3.m-auto.happycontent {
     display: flex;
     justify-content: center;

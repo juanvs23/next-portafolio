@@ -15,7 +15,7 @@ const LayoutPages = ({children}) => {
             <title>{titleContent}</title>
         </Head>
         <Header/>
-           <Container className="py-2">
+           <Container className="py-2 container-layout">
            {children}
            </Container>
            <ContactFooter/>

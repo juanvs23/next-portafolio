@@ -10,7 +10,7 @@ const Header = () => {
         <Navbar collapseOnSelect expand="lg" bg="dark" sticky="top" variant="dark">
  <Container>
      <Link href="/" >
-            <a className="navbar-brand">React-bootstrap</a>   
+            <a className="navbar-brand">Juan Carlos Avila</a>   
      </Link>
  
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -24,7 +24,7 @@ const Header = () => {
       <a  className="nav-link">Blog</a>
       </ActiveLink>
       <ActiveLink activeClassName="active" href="/GithubPage">
-      <a className="nav-link">github</a>
+      <a className="nav-link">Github</a>
       </ActiveLink>
       
     </Nav>

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import Image from 'next/image'
 
 export const ProyectContent = styled.div`
 h4.portfolio-title {
@@ -15,7 +16,7 @@ const Proyect =({proyect})=>{
         <ProyectContent className="pb-4 col-md-6">
             
             <div className="p-0 card " >
-        <img src={foto} className="card-img-top" alt="..."/>
+        <Image src={foto} width="" height="" className="card-img-top" alt={title}/>
         <div className="card-body">
           <h4 className="mb-2 text-center card-title portfolio-title">{title}</h4>
          

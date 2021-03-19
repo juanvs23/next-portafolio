@@ -15,3 +15,9 @@ export const validate=(text,element,clss)=>{
 
 
 }
+
+export const  excerpt = (content, limit)=>{
+    let text = content.substring(0,limit);
+   
+    return `${text}... </p>`;
+}
