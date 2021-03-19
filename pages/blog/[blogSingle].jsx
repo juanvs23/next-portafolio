@@ -61,7 +61,7 @@ export default  BlogSingle;
 
 export async function getServerSideProps(context){
    
-    let post = context.query.BlogSingle;
+    let post = context.query.blogSingle;
     const data = await fetch(`http://ideas-digitales.tk/portafoliocms/wp-json/wp/v2/posts/?_embed=true&slug="${post}"`);
     const singlePost = await data.json();
     let error =false
