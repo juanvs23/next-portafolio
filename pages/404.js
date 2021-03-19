@@ -1,5 +1,5 @@
 import React from 'react'
-import LayoutPages from "../components/layouts/LayoutPages";
+import LayoutPages from "../components/layouts/layoutPages";
 import { FunctionalsContent } from '../context/content';
 import Image from 'next/image'
 import AOS from 'aos'

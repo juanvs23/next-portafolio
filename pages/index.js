@@ -1,15 +1,15 @@
 import {useContext,useEffect} from 'react'
 import Link from "next/link"
-import Header from "../components/Header"
-import LayoutPages from "../components/layouts/LayoutPages"
+import Header from "../components/header"
+import LayoutPages from "../components/layouts/layoutPages"
 import Image from 'next/image'
 import { FunctionalsContent } from '../context/content';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import NProgress from 'nprogress';
-import SkillsContent from '../components/SkillsContent'
-import Experiencias from '../components/Experiencias'
-import PortfolioRow from '../components/PortfolioRow'
+import SkillsContent from '../components/skillsContent'
+import Experiencias from '../components/experiencias'
+import PortfolioRow from '../components/portfolioRow'
 
 
 

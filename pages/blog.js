@@ -1,5 +1,5 @@
 
-import LayoutPages from '../components/layouts/LayoutPages'
+import LayoutPages from '../components/layouts/layoutPages'
 import { FunctionalsContent } from '../context/content';
 import AOS from 'aos'
 import 'aos/dist/aos.css'

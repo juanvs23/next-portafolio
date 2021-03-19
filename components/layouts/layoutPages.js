@@ -1,10 +1,10 @@
 import {useContext} from 'react'
 import Container from "react-bootstrap/Container"
 import Footer from "../footer"
-import Header from "../Header"
+import Header from "../header"
 import Head from 'next/head'
 import { FunctionalsContent } from '../../context/content'
-import ContactFooter from '../ContactFooter.jsx'
+import ContactFooter from '../contactFooter.jsx'
 
 
 const LayoutPages = ({children}) => {

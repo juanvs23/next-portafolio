@@ -1,6 +1,6 @@
 
 import React from 'react'
-import LayoutPages from '../components/layouts/LayoutPages'
+import LayoutPages from '../components/layouts/layoutPages'
 
 const _error = ({status}) => {
     return (

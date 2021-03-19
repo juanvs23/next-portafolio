@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
 import Container from 'react-bootstrap/Container'
-import ActiveLink from './ActiveLink'
+import ActiveLink from './activeLink'
 
 const Header = () => {
     return (

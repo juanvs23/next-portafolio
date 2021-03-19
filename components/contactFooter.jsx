@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import Form from './Form';
+import Form from './form';
 
 export const SubFooter = styled.div`
   padding:40px 0;
