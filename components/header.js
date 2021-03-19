@@ -23,7 +23,7 @@ const Header = () => {
       <ActiveLink activeClassName="active" href="/blog">
       <a  className="nav-link">Blog</a>
       </ActiveLink>
-      <ActiveLink activeClassName="active" href="/GithubPage">
+      <ActiveLink activeClassName="active" href="/githubPage">
       <a className="nav-link">Github</a>
       </ActiveLink>
       
