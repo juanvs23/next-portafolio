@@ -1,4 +1,5 @@
 import {useContext,useEffect} from 'react'
+import Head from 'next/head'
 import Link from "next/link"
 import Header from "../components/header"
 import LayoutPages from "../components/layouts/layoutPages"
@@ -15,7 +16,7 @@ import PortfolioRow from '../components/portfolioRow'
 
  
 
-function HomePage() {
+function AboutPage(props) {
     const {setTitleContent, empresas,portfolio} = useContext(FunctionalsContent);
     useEffect(() => {
         setTitleContent('Mi Portafolio')
@@ -26,9 +27,12 @@ function HomePage() {
             NProgress.done();
         },1000)
     }, [])
+
     const empresaTime = ()=>(empresas.length*100)
 
     return(
+        <>
+        
         <LayoutPages>
            <header  className="row" >
                <div className="col-12">
@@ -42,12 +46,9 @@ function HomePage() {
                             </div>
                             <div className="col-md-8">
                                 <h1 className="text-info" data-aos="fade-left"  data-aos-delay="50" >Acerca de mi...</h1>
-                                <p data-aos="fade-in"  data-aos-delay="160">Mi nombre es Juan  Carlos Avila. Soy desarrollador Web con 3 años de experiencia en el desarrollo web y 10 años de graduado como técnico universitario.  Me gusta el desarrollo web en especial el  front-end.
-
-Tengo experiencia en: HTML+CSS3, JavaScript, PHP, wordpress, React y NodeJs. Más información
-
-He trabajado como desarrollador web para varias empresas de marketing como desarrollador independiente entre las puedo indicar:
-</p>
+                                <h5 data-aos="fade-left" className="text-light"  data-aos-delay="50" dangerouslySetInnerHTML={{__html:props.pageContent[0].title.rendered}}></h5>
+                                <div data-aos="fade-in"  data-aos-delay="160" dangerouslySetInnerHTML={{__html:props.pageContent[0].content.rendered}}>
+</div>
 <ol>
    { empresas.map((empresa,i)=>{
        return <li data-aos="fade-in" data-aos-duration="2000" data-aos-delay={300+100*i} key={i}>{empresa.nombre}</li>
@@ -63,7 +64,9 @@ He trabajado como desarrollador web para varias empresas de marketing como desar
                </div>
            </header>
            <div className="row">
-               <div className="col-md-4">
+               <div className="col-12">
+                  
+
                    <div className="mt-3 " data-aos="fade-in" data-aos-delay={empresaTime()+600}>
                        <div className="mt-3 " style={{ padding: '.75rem 1.25rem' }}>
                           
@@ -76,13 +79,16 @@ He trabajado como desarrollador web para varias empresas de marketing como desar
                        </div>
                    </div>
                 </div>
-               <div className="col-md-8">
+               <div className="col-12">
                <div className="mt-3 card bg-secondary" data-aos="fade-in"  data-aos-delay={empresaTime()+600}>
                        <div className="card-header">
                             <h3 className="text-info">Experiencia:</h3>
                        </div>
                        <div className="card-body">
+                           
                            {empresas.map((empresa,i)=><Experiencias key={i} empresa={empresa}/>)}
+
+                           
                        </div>
                 </div>
                 <div className="mt-3 card bg-primary" data-aos="fade-in"  data-aos-delay={empresaTime()}>
@@ -98,7 +104,18 @@ He trabajado como desarrollador web para varias empresas de marketing como desar
                </div>
            </div>
         </LayoutPages>
+        </>
     )
   }
   
-  export default HomePage
+export async function getServerSideProps(context){
+    const data = await fetch('https://ideas-digitales.tk/portafoliocms/wp-json/wp/v2/pages/?_embed=true&slug="portafolio-desarrollador-wordpress-react-node"');
+    const pageContent = await data.json();
+   
+    return {
+        props:{
+            pageContent
+        }
+    }
+}
+  export default AboutPage;

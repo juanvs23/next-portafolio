@@ -13,7 +13,7 @@ const Proyect =({proyect})=>{
     const {title,type,url,foto} = proyect;
 
     return(
-        <ProyectContent className="pb-4 col-md-6">
+        <ProyectContent className="pb-4 col-md-4">
             
             <div className="p-0 card " >
         <Image src={foto} width="" height="" className="card-img-top" alt={title}/>

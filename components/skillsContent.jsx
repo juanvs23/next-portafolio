@@ -11,6 +11,9 @@ const SkillsContainer = styled.div`
     .skill{
         padding-bottom:20px;
     }
+    .card.card-body.bg-secondary {
+        height: calc(100% - 30px)
+    }
     .detalle{
         font-size:12px;
         line-height:1.2;
@@ -41,8 +44,12 @@ const Skill =({skill})=>{
         AOS.init();
     }, [])
     return(
+
+       <div className=" col-md-4">
+           <div className="card card-body bg-secondary">
+
        
-           <div className="my-3 skill card card-body bg-secondary" data-aos="fade-in">
+           <div className="skill " data-aos="fade-in">
         <h4><i className={icon}></i> <span>{nombre}</span> </h4>
 
         <ProgressBar
@@ -58,7 +65,8 @@ const Skill =({skill})=>{
                 }
         </div>
     </div>
-       
+    </div>
+    </div>   
     
     )
 }
@@ -67,7 +75,9 @@ const SkillsContent = () => {
     const {skills} = useContext(FunctionalsContent);
     return (
         <SkillsContainer>
-            {skills.map((skill,i)=><Skill skill={skill} key={i} />)}
+           <div className="row justify-content-center">
+           {skills.map((skill,i)=><Skill skill={skill} key={i} />)}
+           </div>
         </SkillsContainer>
     )
 }
