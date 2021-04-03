@@ -253,7 +253,7 @@ export const portfolio=[
     {
         title:'Dogtorcat',
         type:'',
-        url:'https://clubebemcomigo.com.br/',
+        url:'https://www.dogtorscat.com/',
         foto:'/dogtorcat.png'
     },
     {
