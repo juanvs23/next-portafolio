@@ -36,7 +36,7 @@ function AboutPage(props) {
         <LayoutPages>
            <header  className="row" >
                <div className="col-12">
-                   <div  className="card card-body bg-secondary" data-aos="fade-in">
+                   <div  className="card card-body bg-secondary" >
                        <div className="row">
                         <div className="col-md-4">
                             <Image 
@@ -45,9 +45,9 @@ function AboutPage(props) {
                             height={340} alt="" className="fluid-img"/>
                             </div>
                             <div className="col-md-8">
-                                <h1 className="text-info" data-aos="fade-left"  data-aos-delay="50" >Acerca de mi...</h1>
-                                <h5 data-aos="fade-left" className="text-light"  data-aos-delay="50" dangerouslySetInnerHTML={{__html:props.pageContent[0].title.rendered}}></h5>
-                                <div data-aos="fade-in"  data-aos-delay="160" dangerouslySetInnerHTML={{__html:props.pageContent[0].content.rendered}}>
+                                <h1 className="text-info"  >Acerca de mi...</h1>
+                                <h5 data-aos="fade-left" dangerouslySetInnerHTML={{__html:props.pageContent[0].title.rendered}}></h5>
+                                <div   data-aos-delay="160" dangerouslySetInnerHTML={{__html:props.pageContent[0].content.rendered}}>
 </div>
 <ol>
    { empresas.map((empresa,i)=>{

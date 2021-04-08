@@ -52,15 +52,16 @@ const BlogCard = ({card}) => {
 
 let slug =card.slug
 let excerptText =excerpt(card.excerpt.rendered, 100)
-
+console.log(card.acf.imagenes_bloq_landing);
+let image =card.acf.imagenes_bloq_landing? card.acf.imagenes_bloq_landing: featuredmedia.medium.source_url;
     return (
         <div className="col-md-6 col-lg-4">
          
             <div className="card " >
   <img 
-  src={featuredmedia.medium.source_url}
-  width={featuredmedia.medium.width}
-  height={featuredmedia.medium.height}  
+  src={image}
+  width={350}
+  height={350}  
   className="card-img-top" 
   alt={card.title.rendered} />
   <div className="card-body">

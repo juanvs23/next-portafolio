@@ -6,7 +6,7 @@ import { validate } from '../helpers/helpers';
 export const FunctionalsContent =createContext();
 
 const FunctionalsProvider=({children})=>{
-    const [titleContent,setTitleContent] = useState('index');
+    const [titleContent,setTitleContent] = useState('Mi portafolio - Juan Carlos Avila');
         return(
         <FunctionalsContent.Provider
             value={{
