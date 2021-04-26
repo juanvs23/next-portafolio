@@ -239,6 +239,12 @@ export const skills= [
 ]
 export const portfolio=[
     {
+        title:'next-gallery',
+        type:'gallery',
+        url:'https://next-gallery-otl51azu8-juanvs23.vercel.app/',
+        foto:'/gallery.png'
+    },
+    {
         title:'Clubecomigo',
         type:'ecommerce',
         url:'https://clubebemcomigo.com.br/',
@@ -273,6 +279,7 @@ export const portfolio=[
         type:'ecommerce',
         url:'https://www.moderna.com.ec/',
         foto:'/moderna-alimentos.png'
-    }
+    },
+   
 
 ]
