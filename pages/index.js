@@ -51,12 +51,12 @@ function AboutPage(props) {
 </div>
 <ol>
    { empresas.map((empresa,i)=>{
-       return <li data-aos="fade-in" data-aos-duration="500" data-aos-delay={300+100*i} key={i}>{empresa.nombre}</li>
+       return <li data-aos="fade-in" data-aos-duration="500"  key={i}>{empresa.nombre}</li>
    })}
 </ol>
 
                                
-                                <a className="btn btn-info" data-aos="zoom-in" data-aos-duration="500"  data-aos-delay={300} href="mailto:juanvs23@gmail.com">Contratame</a>
+                                <a className="btn btn-info" data-aos="zoom-in" data-aos-duration="500"   href="mailto:juanvs23@gmail.com">Contratame</a>
                             </div>
 
                        </div>
@@ -67,7 +67,7 @@ function AboutPage(props) {
                <div className="col-12">
                   
 
-                   <div className="mt-3 " data-aos="fade-in" data-aos-delay={empresaTime()+100}>
+                   <div className="mt-3 " data-aos="fade-in" >
                        <div className="mt-3 " style={{ padding: '.75rem 1.25rem' }}>
                           
                            <h3 className="text-info">Skills:</h3>
@@ -80,7 +80,7 @@ function AboutPage(props) {
                    </div>
                 </div>
                <div className="col-12">
-               <div className="mt-3 card bg-secondary" data-aos="fade-in"  data-aos-delay={empresaTime()+100}>
+               <div className="mt-3 card bg-secondary" data-aos="fade-in"  >
                        <div className="card-header">
                             <h3 className="text-info">Experiencia:</h3>
                        </div>
@@ -91,7 +91,7 @@ function AboutPage(props) {
                            
                        </div>
                 </div>
-                <div className="mt-3 card bg-primary" data-aos="fade-in"  data-aos-delay={empresaTime()}>
+                <div className="mt-3 card bg-primary" data-aos="fade-in"  >
                        <div className="card-header bg-primary">
                             <h3 className="text-white">Proyectos:</h3>
                        </div>
