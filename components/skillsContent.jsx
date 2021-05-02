@@ -49,7 +49,7 @@ const Skill =({skill})=>{
            <div className="card card-body bg-secondary">
 
        
-           <div className="skill " data-aos="fade-in">
+           <div className="skill ">
         <h4><i className={icon}></i> <span>{nombre}</span> </h4>
 
         <ProgressBar
