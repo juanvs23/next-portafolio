@@ -1,23 +1,19 @@
-export const validate=(text,element,clss)=>{
-    const to_check=document.querySelector(`#${element}`);
-    if (!to_check.classList.contains(clss)) {
-        let alert = document.createElement('div'),
-        alertText=document.createTextNode(`${text}`);
-    alert.setAttribute('class','alert-feedback')
-    alert.setAttribute('data-set-alert',to_check.id);
+export const validate = (text, element, clss) => {
+  const toCheck = document.querySelector(`#${element}`);
+  if (!toCheck.classList.contains(clss)) {
+    const alert = document.createElement("div");
+    const alertText = document.createTextNode(`${text}`);
+    alert.setAttribute("class", "alert-feedback");
+    alert.setAttribute("data-set-alert", toCheck.id);
     alert.appendChild(alertText);
-    to_check.classList.add(clss)
-    
-    to_check.parentNode.insertBefore(alert,to_check.nextSibling);
-    }
-   
-  
+    toCheck.classList.add(clss);
 
+    toCheck.parentNode.insertBefore(alert, toCheck.nextSibling);
+  }
+};
 
-}
+export const excerpt = (content, limit) => {
+  const text = content.substring(0, limit);
 
-export const  excerpt = (content, limit)=>{
-    let text = content.substring(0,limit);
-   
-    return `${text}... </p>`;
-}
+  return `${text}... </p>`;
+};
