@@ -78,7 +78,7 @@ function AboutPage(props) {
         </header>
         <div className="row">
           <div className="col-12">
-            <div className="mt-3 " data-aos="fade-in">
+            <div className="mt-3 ">
               <div className="mt-3 " style={{ padding: ".75rem 1.25rem" }}>
                 <h3 className="text-info">Skills:</h3>
               </div>
@@ -88,7 +88,7 @@ function AboutPage(props) {
             </div>
           </div>
           <div className="col-12">
-            <div className="mt-3 card bg-secondary" data-aos="fade-in">
+            <div className="mt-3 card bg-secondary">
               <div className="card-header">
                 <h3 className="text-info">Experiencia:</h3>
               </div>
@@ -98,7 +98,7 @@ function AboutPage(props) {
                 ))}
               </div>
             </div>
-            <div className="mt-3 card bg-primary" data-aos="fade-in">
+            <div className="mt-3 card bg-primary">
               <div className="card-header bg-primary">
                 <h3 className="text-white">Proyectos:</h3>
               </div>
