@@ -115,7 +115,7 @@ function AboutPage(props) {
 
 export async function getServerSideProps(context) {
   const data = await fetch(
-    'https://ideas-digitales.tk/portafoliocms/wp-json/wp/v2/pages/?_embed=true&slug="portafolio-desarrollador-wordpress-react-node"'
+    'https://ideas-digitales.ml/portafoliocms/wp-json/wp/v2/pages/?_embed=true&slug="portafolio-desarrollador-wordpress-react-node"'
   );
   const pageContent = await data.json();
 

@@ -32,7 +32,7 @@ const blog = ({ blogContent }) => {
 };
 export async function getServerSideProps(context) {
   const data = await fetch(
-    "http://ideas-digitales.tk/portafoliocms/wp-json/wp/v2/posts/?_embed=true"
+    "http://ideas-digitales.ml/portafoliocms/wp-json/wp/v2/posts/?_embed=true"
   );
   const blogContent = await data.json();
 
